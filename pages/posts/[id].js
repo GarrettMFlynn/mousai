@@ -1,8 +1,7 @@
 import Main from '../../containers/layouts/main'
 import { getAllPostIds, getPostData } from '../../lib/posts'
-import {BackToHome, FlexBreak} from "../../containers/layouts/layouts.styled";
+import {BackToHome, FlexBreak, PostSection} from "../../containers/layouts/layouts.styled";
 import { HeroDiv} from '../../components/Hero/hero.styled';
-import {PostSection} from "../posts/posts.styled";
 
 import Date from '../../components/date'
 import Head from 'next/head'

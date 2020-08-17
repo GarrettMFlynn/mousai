@@ -6,6 +6,10 @@ export const FlexBreak = styled.div`
     height: 0;
 `
 
+export const PostSection = styled.section`
+    background: ${({ theme }) => theme.midDark};
+`
+
 export const TeamContainer = styled.div`
     display: flex;
     justify-content: center;
