@@ -1,2 +1,2 @@
 # Mousai 
- Mousai Neurotechnologies inspires end-user participation in neurotechnology design.
+ **Mousai Neurotechnologies** inspires end-user participation in neurotechnology design.
