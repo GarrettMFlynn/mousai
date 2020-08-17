@@ -1,7 +1,7 @@
 import React from 'react'
 import { FooterOuter,FooterTop,FooterBottom, NavList, FormCont, SocialList, SocialImg, StyledLink, Breadcrumb, NewsletterForm, InputDiv, EmailInput, FormSubmit} from './footer.styled';
 import {FlexBreak} from '../../containers/layouts/layouts.styled';
-import {privatekeys} from '../../privatekeys'
+import {keys} from '../../keys'
 
 
 const links = [
@@ -30,9 +30,9 @@ const Footer = () => (
             <NewsletterForm>
                 <h3>Sign up for our newsletter.</h3>
                 <FlexBreak/>
-                <InputDiv action={privatekeys.mailchimp_url} method="POST">
-                        <input type="hidden" name="u" value={privatekeys.mailchimp_hidden1}/>
-                        <input type="hidden" name="id" value={privatekeys.mailchimp_hidden2}/>
+                <InputDiv action={keys.mailchimp_url} method="POST">
+                        <input type="hidden" name="u" value={keys.mailchimp_hidden1}/>
+                        <input type="hidden" name="id" value={keys.mailchimp_hidden2}/>
                         <EmailInput type="email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0"
                                        size="25" placeholder="Enter your email address"/>
                         <FormSubmit type="submit" className="formEmailButton" name="submit" value="Subscribe"/>
