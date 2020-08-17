@@ -1,7 +1,4 @@
-import Main from '../../mousaineuro.github.io /containers/layouts/main'
-import {BackToHome, FlexBreak} from '../containers/layouts/layouts.styled';
 import Moduleslist from "../components/ModulesList/moduleslist";
-import Link from "next/link";
 import Head from "next/dist/next-server/lib/head";
 import {siteTitle} from "./_app";
 import React from "react";
