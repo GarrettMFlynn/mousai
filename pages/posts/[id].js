@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Post({ postData }) {
     return (
-        <Main>
+        <>
             <Head>
                 <title>{postData.title}</title>
             </Head>
@@ -30,7 +30,7 @@ export default function Post({ postData }) {
                         </Link>
                     </BackToHome>
                 </PostSection>
-        </Main>
+    </>
     )
 }
 
