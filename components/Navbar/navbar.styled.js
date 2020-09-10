@@ -6,12 +6,12 @@ export const StyledNav = styled.div`
     justify-content: space-between;
     align-items: center;
     flex-basis: 100%;
-    background: ${({ theme }) => theme.lowDark};
-    padding: 50px;
+    background: ${({ theme }) => theme.base};
+    padding: 5px 50px;
     position: sticky;
     top: 0;
-    height:100px;
-    z-index: 1;
+    height: 50px;
+    z-index: 2;
 `
 
 export const AlignRight = styled.div`
@@ -64,8 +64,8 @@ export const NavLink = styled.a`
 `
 
 export const LogoImg = styled.img`
-        height: 75px;
+        height: 30px;
         // border-radius: 40px;
-        // background: radial-gradient(${({ theme }) => theme.highDark},${({ theme }) => theme.lowDark});
+        // background: radial-gradient(${({ theme }) => theme.highDark},${({ theme }) => theme.base});
         cursor: pointer;
 `;

@@ -19,7 +19,7 @@ export const FooterTop = styled.div`
     flex-basis: 100%;
     
     padding: ${({ theme }) => theme.headingMargin} ${({ theme }) => theme.navMargin};
-    background: ${({ theme }) => theme.lowDark};
+    background: ${({ theme }) => theme.base};
 `
 
 export const FooterBottom = styled.div`
@@ -29,7 +29,7 @@ export const FooterBottom = styled.div`
     justify-content: center;
     height: 50px;
     padding: 0px ${({ theme }) => theme.navMargin};
-    background: ${({ theme }) => theme.lowDark};
+    background: ${({ theme }) => theme.base};
 `
 
 

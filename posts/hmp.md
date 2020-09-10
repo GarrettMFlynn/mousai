@@ -27,6 +27,7 @@ to incorporate user feedback into HMP design.
 [insert interactive visualization here]
 
 ## Existing Concerns
+In this section, we discuss potential harms and probable efficacy, outline the evidence base and potential risks and identify gaps in current knowledge.
 ### Concern #1
 [accompanying Delphi questions with actual response recorded]
 ### Concern #2
