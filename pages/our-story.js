@@ -40,10 +40,19 @@ export default function OurStory () {
         <section>
             <h1>Our Story</h1>
             <FlexBreak/>
+            <h2>Mythology</h2>
+            <FlexBreak/>
+            <p> First we had chaos, the brain (Gaia), procreation, and death.</p>
+            <FlexBreak/>
+            <p> The brain gave birth to a unattainable ideal of seamlessness (Ouranos).</p>
+            <FlexBreak/>
+            <p> Totalizing, violent control of the brain (western White man) deposes the ideal of seamlessness.</p>
+            <FlexBreak/>
             <h2>The Company</h2>
             <FlexBreak/>
             <p> Mousai Neurotechnologies is a nonprofit transmedia collective that creates interactive media
                 to enable participatory neurotechnology design by marginalized stakeholders.</p>
+            <p> We create <strong>neural interfaces</strong> to engage our audience.</p>
             <FlexBreak/>
             <TeamContainer>
                 {team.map(({ key, name, tag, affiliation,contribution, href, src}) => (
@@ -60,11 +69,11 @@ export default function OurStory () {
                 ))}
             </TeamContainer>
             <FlexBreak/>
-            <BackToHome>
-                <Link href="/">
-                    <a>← Back to home</a>
-                </Link>
-            </BackToHome>
+            {/*<BackToHome>*/}
+            {/*    <Link href="/">*/}
+            {/*        <a>← Back to home</a>*/}
+            {/*    </Link>*/}
+            {/*</BackToHome>*/}
         </section>
     </>
     )

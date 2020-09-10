@@ -8,7 +8,7 @@ export default function Research ({ allPostsData }) {
     return (
         <>
         <Head>
-            <title>{siteTitle} | Modules</title>
+            <title>{siteTitle} | Research</title>
             <link rel="icon" href="../../favicon.ico" />
             <meta property="og:title" content={siteTitle + ' Modules'}/>
             <meta property="og:description" content="Mousai is inspiring end-user participation in neurotechnology design."/>
