@@ -10,8 +10,9 @@ import {InnerList} from "../Navbar/navbar.styled";
 
 const links = [
     { href: '/', label: 'Home' },
-    { href: '/about-us', label: 'About Us' },
-    { href: '/modules', label: 'Modules' },
+    { href: '/our-story', label: 'About Us' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/research', label: 'Research' },
     { href: '/contact', label: 'Contact' }
 ].map(link => {
     link.key = `menu-link-${link.label}`
@@ -28,9 +29,6 @@ const Menu = ({ open }) => {
                     </Link>
                 </div>
             ))}
-            <Button type='blank'/>
-            <Button href='/signup' text='Sign up for Mousai' type='solid_long'/>
-            <Button href='/login' text='Log in' type='long'/>
         </StyledMenu>
     )
 }

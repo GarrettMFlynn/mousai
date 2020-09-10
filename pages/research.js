@@ -4,7 +4,7 @@ import {siteTitle} from "./_app";
 import React from "react";
 import {getSortedPostsData} from "../lib/posts";
 
-export default function Modules ({ allPostsData }) {
+export default function Research ({ allPostsData }) {
     return (
         <>
         <Head>

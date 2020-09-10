@@ -8,9 +8,9 @@ const Hero =  ({siteTitle}) => {
     return(
         <HeroDiv>
             <section>
-                <img src='../../brand/name_solid_tight.png' style={{width:'300px'}}/>
+                <img src='../../brand/long_solid.png' style={{width:'300px'}}/>
                 <FlexBreak/>
-                <h1>Codesign the mind.</h1>
+                <h1>Become our Muse.</h1>
                 <FlexBreak/>
                 <Button text='Join Mousai' type='solid_long'></Button>
                 <Button text='Participate in Livewire' type='long'></Button>

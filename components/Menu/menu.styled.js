@@ -8,7 +8,7 @@ export const StyledMenu = styled.div`
   background: ${({ theme }) => theme.base};
   height: 100vh;
   width: 100%;
-  text-align: center;
+  text-align: left;
   padding: ${({ theme }) => theme.horizMargin};
   position: absolute;
   top: 0;

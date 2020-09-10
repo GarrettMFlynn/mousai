@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterOuter,FooterTop,FooterBottom, NavList, FormCont, SocialList, SocialImg, StyledLink, Breadcrumb, NewsletterForm, InputDiv, EmailInput, FormSubmit} from './footer.styled';
+import { FooterOuter,FooterLeft,FooterRight, FooterCenter, NavList, FormCont, SocialList, SocialImg, StyledLink, Breadcrumb, NewsletterForm, InputDiv, EmailInput, FormSubmit} from './footer.styled';
 import {FlexBreak} from '../../containers/layouts/layouts.styled';
 import {keys} from '../../keys'
 
@@ -17,7 +17,7 @@ const links = [
 
 const Footer = () => (
     <FooterOuter>
-        <FooterTop>
+        <FooterLeft>
             <SocialList>
                 {links.map(({ key, href, label, src }) => (
                     <a key={key} href={href}>
@@ -25,55 +25,25 @@ const Footer = () => (
                     </a>
                 ))}
             </SocialList>
-            <FlexBreak/>
-            <FormCont/>
-            <NewsletterForm>
-                <h3>Sign up for our newsletter.</h3>
-                <FlexBreak/>
-                <InputDiv action={keys.mailchimp_url} method="POST">
-                        <input type="hidden" name="u" value={keys.mailchimp_hidden1}/>
-                        <input type="hidden" name="id" value={keys.mailchimp_hidden2}/>
-                        <EmailInput type="email" autoCapitalize="off" autoCorrect="off" name="MERGE0" id="MERGE0"
-                                       size="25" placeholder="Enter your email address"/>
-                        <FormSubmit type="submit" className="formEmailButton" name="submit" value="Subscribe"/>
-                </InputDiv>
-            </NewsletterForm>
-            <FormCont/>
-            <FlexBreak/>
-                <NavList>
-                <h4>For Users</h4>
-                <FlexBreak/>
-                <StyledLink>Inspire</StyledLink>
-                <FlexBreak/>
-                <StyledLink>Blog</StyledLink>
-                <FlexBreak/>
-                <StyledLink>Newsletter</StyledLink>
-                <FlexBreak/>
-                <StyledLink>Meetups</StyledLink>
-                <FlexBreak/>
-                <StyledLink>Code of conduct</StyledLink>
-                </NavList>
-                <NavList>
-                    <h4>Company</h4>
-                    <FlexBreak/>
-                    <StyledLink>About</StyledLink>
-                    <FlexBreak/>
-                    <StyledLink>Careers</StyledLink>
-                    <FlexBreak/>
-                    <StyledLink href={"mailto:gflynn@usc.edu"}>Support</StyledLink>
-                    <FlexBreak/>
-                    <StyledLink>API</StyledLink>
-                    <FlexBreak/>
-                    <StyledLink>Terms of service</StyledLink>
-                    <FlexBreak/>
-                    <StyledLink>Privacy policy</StyledLink>
-                </NavList>
-        </FooterTop>
         <FlexBreak/>
-        <FooterBottom>
+        <FooterCenter>
+        <Breadcrumb>© 2020 Mousai Neurotechnologies</Breadcrumb>
+        </FooterCenter>
+        </FooterLeft>
+        <FooterRight>
+            <Breadcrumb href='/newsletter'>Newsletter</Breadcrumb>
+            <FlexBreak/>
+            <Breadcrumb href={"mailto:info@mousaineuro.com"}>Contact</Breadcrumb>
+            <FlexBreak/>
             <Breadcrumb>Sitemap</Breadcrumb>
-            <Breadcrumb>© 2020 Mousai Neurotechnologies</Breadcrumb>
-        </FooterBottom>
+        </FooterRight>
+        <FooterRight>
+            <Breadcrumb>Code of Conduct</Breadcrumb>
+            <FlexBreak/>
+            <Breadcrumb>Terms of Service</Breadcrumb>
+            <FlexBreak/>
+            <Breadcrumb>Privacy Policy</Breadcrumb>
+        </FooterRight>
     </FooterOuter>
 )
 

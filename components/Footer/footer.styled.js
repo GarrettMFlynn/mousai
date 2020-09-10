@@ -4,32 +4,47 @@ import {ButtonStyles} from '../Button/button.styled'
 
 // Footer Containers
 export const FooterOuter = styled.div`
-    background: ${({ theme }) => theme.highDark};
+    background: ${({ theme }) => theme.base};
+    flex-basis: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
+    padding: ${({ theme }) => theme.headingMargin} ${({ theme }) => theme.navMargin};
+    
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+         padding: ${({ theme }) => theme.headingMargin} 0;
+    }
 `
 
-export const FooterTop = styled.div`
+export const FooterLeft = styled.div`
+    display: flex;
+    flex-grow: 1;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: ${({ theme }) => theme.headingMargin} 0;
+    background: ${({ theme }) => theme.base};
+`
+
+export const FooterCenter = styled.div`
     display: flex;
     align-items: top;
     flex-wrap: wrap;
     justify-content: center;
-    flex-basis: 100%;
-    
-    padding: ${({ theme }) => theme.headingMargin} ${({ theme }) => theme.navMargin};
     background: ${({ theme }) => theme.base};
 `
 
-export const FooterBottom = styled.div`
+export const FooterRight = styled.div`
     display: flex;
     flex-grow: 1;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    height: 50px;
-    padding: 0px ${({ theme }) => theme.navMargin};
+    justify-content: flex-end;
     background: ${({ theme }) => theme.base};
+    
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+         justify-content: center;
+    }
 `
 
 
@@ -49,15 +64,15 @@ export const StyledLink = styled.a`
 
 export const Breadcrumb = styled.a`
         color: ${({ theme }) => theme.gray3};
-        font-size: .7rem;
+        font-size: .6rem;
         font-family: ${({ theme }) => theme.body};
         cursor: pointer;
         transition: .5s;
-        padding: 0px 10px; 
+        padding: 10px 0px; 
         
-    &:hover {
-        color: ${({ theme }) => theme.gray4};
-    }
+    // &:hover {
+    //     color: ${({ theme }) => theme.gray4};
+    // }
 `
 
 
@@ -67,6 +82,7 @@ export const SocialImg = styled.img`
     cursor: pointer;
     margin: ${({ theme }) => theme.listPadding};
     transition: .5s;
+    width: 20px;
     
     &:hover {
         filter: invert(100%);
@@ -82,7 +98,7 @@ export const NavList = styled.div`
 export const FormCont = styled.div`
     flex-basis: 100%;
     margin: ${({ theme }) => theme.vertMargin};
-    border-top: 2px solid ${({ theme }) => theme.mnemeLight};
+    // border-top: 2px solid ${({ theme }) => theme.mnemeLight};
     
 `
 
@@ -90,7 +106,6 @@ export const SocialList = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: ${({ theme }) => theme.listPadding};
     flex-grow: 1;
     flex-basis: 100%;
 `
@@ -98,7 +113,7 @@ export const SocialList = styled.div`
 
 export const NewsletterForm = styled.div`
         display: flex;
-        flex-basis: 75%;
+        flex-basis: 100%;
         justify-content: center;
         align-items: flex-end;
         flex-wrap: wrap;

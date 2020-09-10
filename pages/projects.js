@@ -22,50 +22,50 @@ const team = [
     return link
 })
 
-export default function AboutUs () {
+export default function Projects () {
     return (
         <>
-        <Head>
-            <title>{siteTitle} | About Us</title>
-            <link rel="icon" href="../../favicon.ico" />
-            <meta property="og:title" content={'About ' + siteTitle}/>
-            <meta property="og:description" content="Mousai is inspiring end-user participation in neurotechnology design."/>
-            <meta property="og:image" content="https://localist-images.azureedge.net/photos/33741435298225/huge/7df0cd23141abd97fab94a1de7c97a96e3fcee3e.jpg"/>
-            <meta property="og:url" content="http://mousaineuro.com"/>
-            <meta name="twitter:card" content="summary_large_image"/>
-            <meta property="og:site_name" content={'About ' + siteTitle}/>
-            <meta name="twitter:image:alt" content={'About ' + siteTitle}/>
-            <meta name="twitter:site" content="@mousaineuro"/>
-        </Head>
-        <section>
-            <h1>About Us</h1>
-            <FlexBreak/>
-            <p> Inspired by the COVID-19 pandemic, a group of USC students founded Mousai Neurotechnologies
-                in late 2020.</p>
-            <FlexBreak/>
-            <h1>Team</h1>
-            <FlexBreak/>
-            <TeamContainer>
-                {team.map(({ key, name, tag, affiliation,contribution, href, src}) => (
-                    <TeamTile key={key} href={href}>
-                        {/*<TeamImg>*/}
-                        {/*    <img src={src}/>*/}
-                        {/*</TeamImg>*/}
-                        <TeamDetails>
-                            <h4>{tag}</h4>
-                            <h2>{name}</h2>
-                            <p>{affiliation}</p>
-                        </TeamDetails>
-                    </TeamTile>
-                ))}
-            </TeamContainer>
-            <FlexBreak/>
-            <BackToHome>
-                <Link href="/">
-                    <a>← Back to home</a>
-                </Link>
-            </BackToHome>
-        </section>
-    </>
+            <Head>
+                <title>{siteTitle} | About Us</title>
+                <link rel="icon" href="../../favicon.ico" />
+                <meta property="og:title" content={'About ' + siteTitle}/>
+                <meta property="og:description" content="Mousai is inspiring end-user participation in neurotechnology design."/>
+                <meta property="og:image" content="https://localist-images.azureedge.net/photos/33741435298225/huge/7df0cd23141abd97fab94a1de7c97a96e3fcee3e.jpg"/>
+                <meta property="og:url" content="http://mousaineuro.com"/>
+                <meta name="twitter:card" content="summary_large_image"/>
+                <meta property="og:site_name" content={'About ' + siteTitle}/>
+                <meta name="twitter:image:alt" content={'About ' + siteTitle}/>
+                <meta name="twitter:site" content="@mousaineuro"/>
+            </Head>
+            <section>
+                <h1>Projects</h1>
+                <FlexBreak/>
+                <p> Inspired by the COVID-19 pandemic, a group of USC students founded Mousai Neurotechnologies
+                    in late 2020.</p>
+                <FlexBreak/>
+                <h1>Team</h1>
+                <FlexBreak/>
+                <TeamContainer>
+                    {team.map(({ key, name, tag, affiliation,contribution, href, src}) => (
+                        <TeamTile key={key} href={href}>
+                            {/*<TeamImg>*/}
+                            {/*    <img src={src}/>*/}
+                            {/*</TeamImg>*/}
+                            <TeamDetails>
+                                <h4>{tag}</h4>
+                                <h2>{name}</h2>
+                                <p>{affiliation}</p>
+                            </TeamDetails>
+                        </TeamTile>
+                    ))}
+                </TeamContainer>
+                <FlexBreak/>
+                <BackToHome>
+                    <Link href="/">
+                        <a>← Back to home</a>
+                    </Link>
+                </BackToHome>
+            </section>
+        </>
     )
 }
