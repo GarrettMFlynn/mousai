@@ -12,10 +12,10 @@ export const HeroDiv = styled.div`
     background-size: cover;
     
     section{
-    justify-content: center;
+    justify-content: left;
     
         h1{
-            text-align: center;
+            text-align: left;
         }
     }
 `

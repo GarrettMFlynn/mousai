@@ -10,7 +10,7 @@ const Hero =  ({siteTitle}) => {
             <section>
                 {/*<img src='../../brand/logo_tight_solid.png' style={{width:'100px'}}/>*/}
                 <FlexBreak/>
-                <h1>Inspire the future of neurotechnology design.</h1>
+                <h1 style={{fontSize:'50px'}}>Inspire the future of neurotechnology design.</h1>
                 <FlexBreak/>
                 <Button text='Be our Muse' type='long'></Button>
                 <Button text='RSVP for Livewire' type='long'></Button>
