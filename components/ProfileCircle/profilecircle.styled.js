@@ -5,8 +5,8 @@ export const StyledProfile = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -18,7 +18,7 @@ export const StyledProfile = styled.button`
   }
   
   img {
-  width: 25px;
+  width: 100%;
   border-radius: 30px;
   cursor: pointer;
   }

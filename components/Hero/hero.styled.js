@@ -6,16 +6,16 @@ export const HeroDiv = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background: ${({ theme }) => theme.mask}, url("../../images/livewire.png") no-repeat center fixed;
+    background: ${({ theme }) => theme.mask}, url("../../images/muse.jpg") no-repeat center fixed;
     width: 100%;
     height: calc(100vh - 50px);
     background-size: cover;
     
     section{
-    justify-content: left;
+    justify-content: center;
     
         h1{
-            text-align: left;
+            text-align: center;
         }
     }
 `

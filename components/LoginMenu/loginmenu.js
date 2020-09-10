@@ -21,15 +21,8 @@ const links = [
 const LoginMenu = ({ open }) => {
     return (
         <StyledLogin open={open}>
-            {/*{links.map(({ key, href, label}) => (*/}
-            {/*    <div key={key}>*/}
-            {/*        <Link href={href}>*/}
-            {/*            <a><h1>{label}</h1></a>*/}
-            {/*        </Link>*/}
-            {/*    </div>*/}
-            {/*))}*/}
-            <Button type='blank'/>
-            <Button href='/signup' text='Become a Muse' type='solid_long'/>
+            <h1>Become a muse today.</h1>
+            <Button href='/signup' text='Register' type='solid_long'/>
             <Button href='/login' text='Log in' type='long'/>
         </StyledLogin>
     )

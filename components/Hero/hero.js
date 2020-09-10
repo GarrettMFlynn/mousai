@@ -8,9 +8,9 @@ const Hero =  ({siteTitle}) => {
     return(
         <HeroDiv>
             <section>
-                {/*<img src='../../brand/logo_tight_solid.png' style={{width:'100px'}}/>*/}
+                <img src='../../brand/logo_tight_solid.png' style={{width:'50px'}}/>
                 <FlexBreak/>
-                <h1 style={{fontSize:'50px'}}>Inspire the future of <br/> neurotechnology design.</h1>
+                <h1>Inspire the future of neurotechnology design.</h1>
                 <FlexBreak/>
                 <Button text='Be our Muse' type='long'></Button>
                 <Button text='RSVP for Livewire' type='long'></Button>

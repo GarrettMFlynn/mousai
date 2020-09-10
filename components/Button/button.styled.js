@@ -25,13 +25,13 @@ transition: 0.5s;
 }
 
 &.long {
-    width: 300px;
+    width: 250px;
 }
 
 /* Solid Subclass */  
 &.solid {
-color: ${({ theme }) => theme.primaryLight};    
-background: ${({ theme }) => theme.aoede}
+color: ${({ theme }) => theme.base};    
+background: ${({ theme }) => theme.primaryLight}
 }
 
 &.solid:hover {
@@ -39,9 +39,9 @@ background: ${({ theme }) => theme.aoedeLight};
 }
 
 &.solid_long {
-width: 300px;
-color: ${({ theme }) => theme.primaryLight};    
-background: ${({ theme }) => theme.aoede}
+width: 250px;
+color: ${({ theme }) => theme.base};    
+background: ${({ theme }) => theme.gray4}
 }
 
 &.solid_long:hover {
