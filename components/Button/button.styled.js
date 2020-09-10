@@ -3,20 +3,20 @@ import styled from 'styled-components';
 
 export const ButtonStyles = styled.button`  
 background: transparent;  
-color: ${({ theme }) => theme.aoede};  
+color: ${({ theme }) => theme.gray4};  
 font-family: ${({ theme }) => theme.body};  
 font-size: 15px;  
 margin: 5px 5px;  
 width: 100px; 
 height: 50px;
-border: 1px solid ${({ theme }) => theme.aoede};  
+border: 1px solid ${({ theme }) => theme.gray4};  
 border-radius: 5px;  
 cursor: pointer;
 transition: 0.5s;
 
 &:hover {
-        background: ${({ theme }) => theme.aoedeLight};
-        color: ${({ theme }) => theme.primaryLight};
+        // background: ${({ theme }) => theme.primaryLight};
+        color: ${({ theme }) => theme.aoedeLight};
         border-color: ${({ theme }) => theme.aoedeLight};  
     }
     

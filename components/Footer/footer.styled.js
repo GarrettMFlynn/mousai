@@ -76,6 +76,10 @@ export const BreadcrumbLink = styled(Breadcrumb)`
     color: ${({ theme }) => theme.gray4};
     transition: .5s;
     
+    &:hover {
+    color: ${({ theme }) => theme.aoedeLight};
+    }
+    
     &:before {
         content: "";
         position: absolute;
@@ -83,7 +87,7 @@ export const BreadcrumbLink = styled(Breadcrumb)`
         height: 1px;
         bottom: 0;
         left: 0;
-        background-color: #FFF;
+        background-color: ${({ theme }) => theme.primaryLight};
         visibility: hidden;
         transition: all 0.3s ease-in-out;
     }
@@ -93,14 +97,20 @@ export const BreadcrumbLink = styled(Breadcrumb)`
     }
 `
 
-// Social Media Icons
-export const SocialImg = styled.img`
-    filter: invert(75%);
-    cursor: pointer;
-    margin: ${({ theme }) => theme.listPadding};
-    transition: .5s;
-    width: 20px;
-    
+export const Link = styled.a`
+  display: flex;
+  align-items: center;
+`;
+export const SocialIcon = styled.svg`
+  flex: none;
+  fill: ${({ theme }) => theme.gray4};
+  transition: .5s;
+  width: 20px;
+  margin: ${({ theme }) => theme.listPadding};
+  
+  ${Link}:hover & {
+    fill: ${({ theme }) => theme.aoedeLight};
+  }
 `
 
 // Containers
@@ -124,6 +134,7 @@ export const SocialList = styled.div`
     
     a {
         position: relative;
+        
     }
     
     a:before {
@@ -133,7 +144,7 @@ export const SocialList = styled.div`
           height: 1px;
           bottom: 0;
           left: 0;
-          background-color: #FFF;
+          background-color: ${({ theme }) => theme.primaryLight};
           visibility: hidden;
           transition: all 0.3s ease-in-out;
         }
