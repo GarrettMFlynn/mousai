@@ -38,12 +38,12 @@ export default function OurStory () {
             <meta name="twitter:site" content="@mousaineuro"/>
         </Head>
         <section>
-            <h1>About Us</h1>
+            <h1>Our Story</h1>
             <FlexBreak/>
-            <p> Inspired by the COVID-19 pandemic, a group of USC students founded Mousai Neurotechnologies
-                in late 2020.</p>
+            <h2>The Company</h2>
             <FlexBreak/>
-            <h1>Team</h1>
+            <p> Mousai Neurotechnologies is a nonprofit transmedia collective that creates interactive media
+                to enable participatory neurotechnology design by marginalized stakeholders.</p>
             <FlexBreak/>
             <TeamContainer>
                 {team.map(({ key, name, tag, affiliation,contribution, href, src}) => (

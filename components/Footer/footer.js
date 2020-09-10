@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterOuter,FooterLeft,FooterRight, FooterCenter, NavList, FormCont, SocialList, SocialImg, StyledLink, Breadcrumb, NewsletterForm, InputDiv, EmailInput, FormSubmit} from './footer.styled';
+import { FooterOuter,FooterLeft,FooterRight, FooterCenter, SocialList, SocialImg, Breadcrumb, BreadcrumbLink} from './footer.styled';
 import {FlexBreak} from '../../containers/layouts/layouts.styled';
 import {keys} from '../../keys'
 
@@ -31,18 +31,18 @@ const Footer = () => (
         </FooterCenter>
         </FooterLeft>
         <FooterRight>
-            <Breadcrumb href='/newsletter'>Newsletter</Breadcrumb>
+            <BreadcrumbLink href='/newsletter'>Newsletter</BreadcrumbLink>
             <FlexBreak/>
-            <Breadcrumb href={"mailto:info@mousaineuro.com"}>Contact</Breadcrumb>
+            <BreadcrumbLink href={"mailto:info@mousaineuro.com"}>Contact</BreadcrumbLink>
             <FlexBreak/>
-            <Breadcrumb>Sitemap</Breadcrumb>
+            <BreadcrumbLink>Sitemap</BreadcrumbLink>
         </FooterRight>
         <FooterRight>
-            <Breadcrumb>Code of Conduct</Breadcrumb>
+            <BreadcrumbLink>Code of Conduct</BreadcrumbLink>
             <FlexBreak/>
-            <Breadcrumb>Terms of Service</Breadcrumb>
+            <BreadcrumbLink>Terms of Service</BreadcrumbLink>
             <FlexBreak/>
-            <Breadcrumb>Privacy Policy</Breadcrumb>
+            <BreadcrumbLink>Privacy Policy</BreadcrumbLink>
         </FooterRight>
     </FooterOuter>
 )

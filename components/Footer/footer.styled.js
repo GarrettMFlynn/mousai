@@ -66,15 +66,32 @@ export const Breadcrumb = styled.a`
         color: ${({ theme }) => theme.gray3};
         font-size: .6rem;
         font-family: ${({ theme }) => theme.body};
-        cursor: pointer;
-        transition: .5s;
-        padding: 10px 0px; 
+        padding: 10px 0px;
         
-    // &:hover {
-    //     color: ${({ theme }) => theme.gray4};
-    // }
 `
 
+export const BreadcrumbLink = styled(Breadcrumb)`
+    position: relative;
+    cursor: pointer;
+    color: ${({ theme }) => theme.gray4};
+    transition: .5s;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #FFF;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+`
 
 // Social Media Icons
 export const SocialImg = styled.img`
@@ -84,10 +101,6 @@ export const SocialImg = styled.img`
     transition: .5s;
     width: 20px;
     
-    &:hover {
-        filter: invert(100%);
-        // filter: invert(33%) sepia(36%) saturate(7285%) hue-rotate(236deg) brightness(101%) contrast(104%);
-    }
 `
 
 // Containers
@@ -108,6 +121,27 @@ export const SocialList = styled.div`
     align-items: center;
     flex-grow: 1;
     flex-basis: 100%;
+    
+    a {
+        position: relative;
+    }
+    
+    a:before {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: #FFF;
+          visibility: hidden;
+          transition: all 0.3s ease-in-out;
+        }
+        
+        a:hover:before {
+          visibility: visible;
+          width: 100%;
+        }
 `
 
 

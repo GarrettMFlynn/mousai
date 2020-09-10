@@ -23,8 +23,6 @@ export default function Home ({ allPostsData }) {
           <meta name="twitter:site" content="@mousaineuro"/>
         </Head>
         <Hero siteTitle = {siteTitle}/>
-        <Features/>
-        <CallToAction/>
       </>
   )
 }

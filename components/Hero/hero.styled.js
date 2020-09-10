@@ -8,6 +8,14 @@ export const HeroDiv = styled.div`
     justify-content: center;
     background: ${({ theme }) => theme.mask}, url("../../images/livewire.png") no-repeat center fixed;
     width: 100%;
-    height: 60vh;
+    height: calc(100vh - 50px);
     background-size: cover;
+    
+    section{
+    justify-content: center;
+    
+        h1{
+            text-align: center;
+        }
+    }
 `

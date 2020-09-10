@@ -8,12 +8,12 @@ const Hero =  ({siteTitle}) => {
     return(
         <HeroDiv>
             <section>
-                <img src='../../brand/long_solid.png' style={{width:'300px'}}/>
+                {/*<img src='../../brand/logo_tight_solid.png' style={{width:'100px'}}/>*/}
                 <FlexBreak/>
-                <h1>Become our Muse.</h1>
+                <h1>Inspire the future of neurotechnology design.</h1>
                 <FlexBreak/>
-                <Button text='Join Mousai' type='solid_long'></Button>
-                <Button text='Participate in Livewire' type='long'></Button>
+                <Button text='Be our Muse' type='long'></Button>
+                <Button text='RSVP for Livewire' type='long'></Button>
             </section>
         </HeroDiv>
     )

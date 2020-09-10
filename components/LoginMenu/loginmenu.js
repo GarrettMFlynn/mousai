@@ -29,7 +29,7 @@ const LoginMenu = ({ open }) => {
             {/*    </div>*/}
             {/*))}*/}
             <Button type='blank'/>
-            <Button href='/signup' text='Sign up for Mousai' type='solid_long'/>
+            <Button href='/signup' text='Become a Muse' type='solid_long'/>
             <Button href='/login' text='Log in' type='long'/>
         </StyledLogin>
     )

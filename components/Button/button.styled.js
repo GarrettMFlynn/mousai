@@ -5,17 +5,18 @@ export const ButtonStyles = styled.button`
 background: transparent;  
 color: ${({ theme }) => theme.aoede};  
 font-family: ${({ theme }) => theme.body};  
-font-size: 10px;  
+font-size: 15px;  
 margin: 5px 5px;  
 width: 100px; 
-height: 30px;
+height: 50px;
 border: 1px solid ${({ theme }) => theme.aoede};  
 border-radius: 5px;  
 cursor: pointer;
 transition: 0.5s;
 
 &:hover {
-        color: ${({ theme }) => theme.aoedeLight};
+        background: ${({ theme }) => theme.aoedeLight};
+        color: ${({ theme }) => theme.primaryLight};
         border-color: ${({ theme }) => theme.aoedeLight};  
     }
     
@@ -24,7 +25,7 @@ transition: 0.5s;
 }
 
 &.long {
-    width: 200px;
+    width: 300px;
 }
 
 /* Solid Subclass */  
@@ -38,7 +39,7 @@ background: ${({ theme }) => theme.aoedeLight};
 }
 
 &.solid_long {
-width: 200px;
+width: 300px;
 color: ${({ theme }) => theme.primaryLight};    
 background: ${({ theme }) => theme.aoede}
 }
