@@ -35,7 +35,7 @@ const Nav = () => {
                 <Menu open={open} setOpen={setOpen} />
             </div>
             <AlignRight>
-                <ProfileCircle/>
+                <ProfileCircle open={open} setOpen={setOpen}/>
                 <InnerList>
                     {/*<Button type='blank'/>*/}
                     {/*<FlexBreak/>*/}
