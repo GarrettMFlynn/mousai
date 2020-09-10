@@ -13,7 +13,7 @@ import { faBolt, faBrain, faMemory} from '@fortawesome/free-solid-svg-icons'
 
 library.add(fab, faBolt, faBrain, faMemory)
 
-export const siteTitle = 'Mousai'
+export const siteTitle = 'Mousai Neurotechnologies'
 
 export default function App({ Component, pageProps }) {
 
